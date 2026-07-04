@@ -3,8 +3,8 @@ Overview
 This project covers building the two core machines for the Houtech.local lab — a Windows Server 2019 domain controller and a Windows 11 client — from scratch in Oracle VirtualBox, from ISO download through first sign-in.
 Objectives
 
-Set up organized local storage for Windows Server 2019 and Windows 11 install media
-Build a Windows Server 2019 VM to serve as the domain controller
+* Set up organized local storage for Windows Server 2019 and Windows 11 install media
+* Build a Windows Server 2019 VM to serve as the domain controller
 Build a Windows 11 VM to serve as a client endpoint
 Prepare both machines for later Active Directory domain join
 
