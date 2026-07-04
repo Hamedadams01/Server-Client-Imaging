@@ -17,26 +17,84 @@ I organized my Windows Server 2019 and Windows 11 installation files in a dedica
 # Building the domain controller (Server 19)
 
 - I created a new VM named "Server 19" in VirtualBox, setting the OS type to Windows Server 2019 (64-bit) and pointing it to my local VirtualBox VMs directory.
+  
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-21%20101557.png)
+  
 - I hit a "No bootable medium found" error on first power-on because no ISO was mounted yet — I mounted the Windows Server 2019 evaluation ISO and retried the boot.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-21%20102126.png?raw=true)
+  
 - I clicked "Install now" on the Windows Setup screen to begin installation.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-21%20102153.png?raw=true)
+  
 - I selected "Windows Server 2019 Standard Evaluation (Desktop Experience)" specifically for the GUI, since I'd need to manage AD roles visually and wanted the lab to look presentable in a portfolio.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-21%20102209.png?raw=true)
+  
 - I selected the 30 GB unallocated disk as the install target.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-21%20102227.png?raw=true)
+  
 - I set a secure Administrator password once the file copy finished, since this account would have full control over the machine on first boot.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-21%20102719.png?raw=true)
+
 - I confirmed the VM rebooted successfully to the Windows lock screen, verifying the install had completed cleanly.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-21%20102803.png?raw=true
+)
+
 - I signed in and renamed the PC from its default auto-generated name to "Houtech" — a meaningful hostname the domain would later be built around.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-21%20103216.png?raw=true
+)
+
 - I reviewed the renamed machine's specs (Intel i5-7500, 2.00 GB RAM, 64-bit OS) to confirm it was configured correctly and ready to serve as the domain controller referenced throughout the rest of the lab.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-21%20103534.png?raw=true)
+
 # Building the client (Windows 11)
 
 - I created a second VM, "Window 11 lab," setting the OS to Windows 11 (64-bit).
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-22%20054841.png?raw=true)
+
 - I hit the same "no bootable medium" error, mounted my Windows 11 25H2 ISO, and retried the boot.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-22%20055012.png?raw=true)
+
 - I confirmed the language and time/currency format as English (United States) on the Windows 11 Setup screen.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-22%20055051.png?raw=true
+) 
+
 - I selected "Install Windows 11" and accepted the file-deletion warning, since the virtual disk was brand new and unallocated.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-22%20055107.png?raw=true)
+
 - I selected the 60 GB unallocated disk as the install location.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-22%20055145.png?raw=true
+)
+
 - I selected "United States" as my region during the out-of-box experience (OOBE) to keep locale settings consistent with the rest of the lab.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-22%20060059.png?raw=true
+)     
+
 - I signed in with a Microsoft account to proceed through the standard OOBE flow — the same experience a real end user would go through.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-22%20070404.png?raw=true)
+
 - I reviewed the PC backup restore screen (device "HOUTX01") that Windows offered during setup, noting what an end user sees at this stage — useful context for later helpdesk troubleshooting around profile restores and sign-in issues.
+
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-22%20070648.png?raw=true
+)
+
 - I reached the desktop and opened the Start menu, confirming Windows 11 was fully installed and signed in as "hamed adams."
 
+![image alt](https://github.com/Hamedadams01/Server-Client-Imaging/blob/465eb51873f9869dc5f76be4a75fb378c7b68042/Screenshot%202026-06-22%20071123.png?raw=true)
 
 # Conclusion
 
